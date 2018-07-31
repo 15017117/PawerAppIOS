@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015AFE31F5919A44B891FB24 /* Pods_PawerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C915FD2EDD8E45FE6B5C6A3 /* Pods_PawerAppTests.framework */; };
+		3FC0ED1C18156B98BFFF85DF /* Pods_PawerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DFA0773D2EB0EB66F850F /* Pods_PawerAppUITests.framework */; };
+		840DCDFE20FF41ED00AE405F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DCDFD20FF41ED00AE405F /* RegisterController.swift */; };
 		84EB1EFE20FD82650026BDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1EFD20FD82650026BDCB /* AppDelegate.swift */; };
 		84EB1F0020FD82650026BDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1EFF20FD82650026BDCB /* ViewController.swift */; };
 		84EB1F0320FD82650026BDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB1F0120FD82650026BDCB /* Main.storyboard */; };
 		84EB1F0520FD82670026BDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB1F0420FD82670026BDCB /* Assets.xcassets */; };
 		84EB1F0820FD82670026BDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB1F0620FD82670026BDCB /* LaunchScreen.storyboard */; };
-		84EB1F1320FD82670026BDCB /* PawerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1F1220FD82670026BDCB /* PawerAppTests.swift */; };
 		84EB1F1E20FD82670026BDCB /* PawerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1F1D20FD82670026BDCB /* PawerAppUITests.swift */; };
+		84EB1F2C20FDC8F60026BDCB /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1F2B20FDC8F60026BDCB /* DesignableTextField.swift */; };
+		8FF412D759146438B243067C /* Pods_PawerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06A06D1B1106C370D09F8A4 /* Pods_PawerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BCD83F499B09971457B0288 /* Pods-PawerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C915FD2EDD8E45FE6B5C6A3 /* Pods_PawerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2938930C7213A5FA831859B6 /* Pods-PawerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3933ADE3561C579506AF6037 /* Pods-PawerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43794DC877CF934E265F3E2C /* Pods-PawerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7ACFC841A0AF676AB1A74129 /* Pods-PawerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		840DCDFD20FF41ED00AE405F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		84EB1EFA20FD82650026BDCB /* PawerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB1EFD20FD82650026BDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EB1EFF20FD82650026BDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +53,13 @@
 		84EB1F0720FD82670026BDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EB1F0920FD82670026BDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EB1F0E20FD82670026BDCB /* PawerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84EB1F1220FD82670026BDCB /* PawerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawerAppTests.swift; sourceTree = "<group>"; };
-		84EB1F1420FD82670026BDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EB1F1920FD82670026BDCB /* PawerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB1F1D20FD82670026BDCB /* PawerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawerAppUITests.swift; sourceTree = "<group>"; };
 		84EB1F1F20FD82670026BDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EB1F2B20FDC8F60026BDCB /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		B06A06D1B1106C370D09F8A4 /* Pods_PawerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FF903D07CB2949F0104B67 /* Pods-PawerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp.release.xcconfig"; sourceTree = "<group>"; };
+		C18DFA0773D2EB0EB66F850F /* Pods_PawerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF412D759146438B243067C /* Pods_PawerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015AFE31F5919A44B891FB24 /* Pods_PawerAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +83,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC0ED1C18156B98BFFF85DF /* Pods_PawerAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FAE8669319BD2D88E60E334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43794DC877CF934E265F3E2C /* Pods-PawerApp.debug.xcconfig */,
+				B0FF903D07CB2949F0104B67 /* Pods-PawerApp.release.xcconfig */,
+				3933ADE3561C579506AF6037 /* Pods-PawerAppTests.debug.xcconfig */,
+				7ACFC841A0AF676AB1A74129 /* Pods-PawerAppTests.release.xcconfig */,
+				1BCD83F499B09971457B0288 /* Pods-PawerAppUITests.debug.xcconfig */,
+				2938930C7213A5FA831859B6 /* Pods-PawerAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84EB1EF120FD82640026BDCB = {
 			isa = PBXGroup;
 			children = (
 				84EB1EFC20FD82650026BDCB /* PawerApp */,
-				84EB1F1120FD82670026BDCB /* PawerAppTests */,
 				84EB1F1C20FD82670026BDCB /* PawerAppUITests */,
 				84EB1EFB20FD82650026BDCB /* Products */,
+				4FAE8669319BD2D88E60E334 /* Pods */,
+				9F2B59DB1CD338923C286D00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,21 +129,14 @@
 			children = (
 				84EB1EFD20FD82650026BDCB /* AppDelegate.swift */,
 				84EB1EFF20FD82650026BDCB /* ViewController.swift */,
+				840DCDFD20FF41ED00AE405F /* RegisterController.swift */,
+				84EB1F2B20FDC8F60026BDCB /* DesignableTextField.swift */,
 				84EB1F0120FD82650026BDCB /* Main.storyboard */,
 				84EB1F0420FD82670026BDCB /* Assets.xcassets */,
 				84EB1F0620FD82670026BDCB /* LaunchScreen.storyboard */,
 				84EB1F0920FD82670026BDCB /* Info.plist */,
 			);
 			path = PawerApp;
-			sourceTree = "<group>";
-		};
-		84EB1F1120FD82670026BDCB /* PawerAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				84EB1F1220FD82670026BDCB /* PawerAppTests.swift */,
-				84EB1F1420FD82670026BDCB /* Info.plist */,
-			);
-			path = PawerAppTests;
 			sourceTree = "<group>";
 		};
 		84EB1F1C20FD82670026BDCB /* PawerAppUITests */ = {
@@ -125,6 +148,16 @@
 			path = PawerAppUITests;
 			sourceTree = "<group>";
 		};
+		9F2B59DB1CD338923C286D00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06A06D1B1106C370D09F8A4 /* Pods_PawerApp.framework */,
+				1C915FD2EDD8E45FE6B5C6A3 /* Pods_PawerAppTests.framework */,
+				C18DFA0773D2EB0EB66F850F /* Pods_PawerAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84EB1F2220FD82670026BDCB /* Build configuration list for PBXNativeTarget "PawerApp" */;
 			buildPhases = (
+				2A2F12A885DC68FEAC28BD0D /* [CP] Check Pods Manifest.lock */,
 				84EB1EF620FD82650026BDCB /* Sources */,
 				84EB1EF720FD82650026BDCB /* Frameworks */,
 				84EB1EF820FD82650026BDCB /* Resources */,
+				0D378474D803C29D788CDFAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84EB1F2520FD82670026BDCB /* Build configuration list for PBXNativeTarget "PawerAppTests" */;
 			buildPhases = (
+				814EE40E8DB0429736BBB9CD /* [CP] Check Pods Manifest.lock */,
 				84EB1F0A20FD82670026BDCB /* Sources */,
 				84EB1F0B20FD82670026BDCB /* Frameworks */,
 				84EB1F0C20FD82670026BDCB /* Resources */,
@@ -167,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84EB1F2820FD82670026BDCB /* Build configuration list for PBXNativeTarget "PawerAppUITests" */;
 			buildPhases = (
+				B055192322EB6C3F5D6FAE3D /* [CP] Check Pods Manifest.lock */,
 				84EB1F1520FD82670026BDCB /* Sources */,
 				84EB1F1620FD82670026BDCB /* Frameworks */,
 				84EB1F1720FD82670026BDCB /* Resources */,
@@ -251,12 +288,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D378474D803C29D788CDFAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A2F12A885DC68FEAC28BD0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PawerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		814EE40E8DB0429736BBB9CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PawerAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B055192322EB6C3F5D6FAE3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PawerAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84EB1EF620FD82650026BDCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84EB1F0020FD82650026BDCB /* ViewController.swift in Sources */,
+				840DCDFE20FF41ED00AE405F /* RegisterController.swift in Sources */,
+				84EB1F2C20FDC8F60026BDCB /* DesignableTextField.swift in Sources */,
 				84EB1EFE20FD82650026BDCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EB1F1320FD82670026BDCB /* PawerAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +541,11 @@
 		};
 		84EB1F2320FD82670026BDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43794DC877CF934E265F3E2C /* Pods-PawerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2U49VFVPPF;
+				DEVELOPMENT_TEAM = 2X8GU4BVVX;
 				INFOPLIST_FILE = PawerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,10 +560,11 @@
 		};
 		84EB1F2420FD82670026BDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FF903D07CB2949F0104B67 /* Pods-PawerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2U49VFVPPF;
+				DEVELOPMENT_TEAM = 2X8GU4BVVX;
 				INFOPLIST_FILE = PawerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +579,7 @@
 		};
 		84EB1F2620FD82670026BDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3933ADE3561C579506AF6037 /* Pods-PawerAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +601,7 @@
 		};
 		84EB1F2720FD82670026BDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACFC841A0AF676AB1A74129 /* Pods-PawerAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +623,7 @@
 		};
 		84EB1F2920FD82670026BDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCD83F499B09971457B0288 /* Pods-PawerAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +644,7 @@
 		};
 		84EB1F2A20FD82670026BDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2938930C7213A5FA831859B6 /* Pods-PawerAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
