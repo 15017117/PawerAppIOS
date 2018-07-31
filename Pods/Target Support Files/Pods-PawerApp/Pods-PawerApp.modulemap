@@ -1,0 +1,6 @@
+framework module Pods_PawerApp {
+  umbrella header "Pods-PawerApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
