@@ -627,9 +627,9 @@
                         <viewLayoutGuide key="safeArea" id="ajE-GX-fPY"/>
                     </view>
                     <connections>
-                        <outlet property="txtfieldfirst" destination="pPe-sl-BYb" id="sxX-b7-2ya"/>
-                        <outlet property="txtfieldlast" destination="JeH-7w-O61" id="dgO-vd-xQB"/>
-                        <outlet property="txtfieldusername" destination="fJT-Kd-Ijj" id="gHL-Lg-pF7"/>
+                        <outlet property="firstName" destination="pPe-sl-BYb" id="OTm-OE-Fim"/>
+                        <outlet property="lastName" destination="JeH-7w-O61" id="Xzi-qv-5cU"/>
+                        <outlet property="username" destination="fJT-Kd-Ijj" id="IbT-Xa-0dk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reU-N0-PNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
