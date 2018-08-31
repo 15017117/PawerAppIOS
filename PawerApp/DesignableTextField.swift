@@ -8,20 +8,13 @@
 
 import UIKit
 @IBDesignable class DesignableTextField: UITextField {
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.layer.cornerRadius = 20.0
-        self.layer.borderWidth = 1
-//        self.layer.borderColor = UIColor.white.cgColor
-        self.layer.backgroundColor = UIColor.white.cgColor
-       
-        
-    }
+  
     
     
     @IBInspectable var leftImage: UIImage?{
         didSet{
             updateView()
+            designTextField()
         }
         
     }
@@ -40,5 +33,21 @@ import UIKit
             //image is null
              leftViewMode = .never
         }
+    }
+    func designTextField(){
+        self.layer.cornerRadius = 15.0
+        self.clipsToBounds = true
+        self.layer.masksToBounds = false
+        self.layer.shadowOpacity = 0.2
+        self.layer.shadowRadius = 4.0
+        self.layer.shadowOffset = CGSize(width: 0
+            , height: 0)
+        self.layer.shadowColor = UIColor.black
+            .cgColor
+    
+       
+        
+        
+        
     }
 }

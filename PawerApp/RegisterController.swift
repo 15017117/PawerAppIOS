@@ -30,6 +30,7 @@ class RegisterController: UIViewController {
     @IBOutlet weak var nameParent: DesignableTextField!
     
    
+    @IBOutlet weak var btnRegister: UIButton!
     
     var unchecked = true
     @IBAction func tick(_ sender: UIButton) {
@@ -56,6 +57,7 @@ class RegisterController: UIViewController {
             "parent_name":nameParent.text!,
              "parent_contact": parentContact.text!,
             "parent_address":parentAddress.text!,
+        
         ]
         
         
@@ -65,6 +67,11 @@ class RegisterController: UIViewController {
             
             if let result = response.result.value{
                 let jsonData = result as! NSDictionary
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
+                self.show(vc, sender: self)
+                UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                UserDefaults.standard.synchronize()
                 
             }
         }
@@ -84,26 +91,18 @@ class RegisterController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnRegister.layer.cornerRadius = 15.0;
         
-   
         
-        firstName.layer.borderWidth = 1
-        firstName.layer.borderColor = UIColor.white.cgColor
-        firstName.layer.cornerRadius = 4
-        firstName.layer.masksToBounds = false
-        firstName.layer.shadowRadius = 5.0
-        firstName.layer.shadowColor = UIColor.black.cgColor
-        firstName.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        firstName.layer.shadowOpacity = 1.0
-        
-        lastName.layer.borderWidth = 1
-        lastName.layer.borderColor = UIColor.white.cgColor
-        lastName.layer.cornerRadius = 4
+        lastName.layer.cornerRadius = 15.0
+        lastName.clipsToBounds = true
         lastName.layer.masksToBounds = false
-        lastName.layer.shadowRadius = 5.0
-        lastName.layer.shadowColor = UIColor.black.cgColor
-        lastName.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        lastName.layer.shadowOpacity = 1.0
+        lastName.layer.shadowOpacity = 0.2
+        lastName.layer.shadowRadius = 4.0
+        lastName.layer.shadowOffset = CGSize(width: 0
+            , height: 0)
+        lastName.layer.shadowColor = UIColor.black
+            .cgColor
         
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = UIDatePickerMode.date
@@ -164,7 +163,6 @@ class RegisterController: UIViewController {
             parentContact.isUserInteractionEnabled = false
              parentAddress.isUserInteractionEnabled = false
              nameParent.isUserInteractionEnabled = false
-        
         }
         
       

@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import QuartzCore
 
 class ViewController: UIViewController {
     
@@ -19,17 +20,21 @@ class ViewController: UIViewController {
    
     
     @IBOutlet weak var LoginButton: UIButton!
-    @IBOutlet weak var labelMessage: UILabel!
+  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+       
         
-        emailTextField.borderStyle = UITextBorderStyle.roundedRect
+        LoginButton.layer.cornerRadius = 15.0;
         
  
       
         
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,10 +55,15 @@ class ViewController: UIViewController {
             
             if let result = response.result.value{
                 let jsonData = result as! NSDictionary
-                
-                self.labelMessage.text = jsonData.value(forKey: "message")as! String?
+               
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
+                self.show(vc, sender: self)
+                UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                UserDefaults.standard.synchronize()
             }
         }
+        
         
     }
 
