@@ -553,7 +553,7 @@
         <!--Edit Profile Controller-->
         <scene sceneID="gTW-oc-0L8">
             <objects>
-                <viewController id="Hq2-e3-Tjw" customClass="EditProfileController" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfileController" id="Hq2-e3-Tjw" customClass="EditProfileController" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vus-vh-lI0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

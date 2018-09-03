@@ -22,13 +22,16 @@ class WelcomeController: UIViewController{
         
         print("Click logout button");
         
-        UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         UserDefaults.standard.synchronize()
-        UserDefaults.standard.removeObject(forKey: "userId")
+        self.movieplayer!.stop()
         
-        let signInPage = self.storyboard?.instantiateViewController(withIdentifier:"LoginController")as! ViewController
-        let appDelegate = UIApplication.shared.delegate
-        appDelegate?.window??.rootViewController = signInPage
+        //switching to login screen
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+        self.navigationController?.pushViewController(loginViewController, animated: true)
+
+       
+        self.dismiss(animated: false, completion: nil)
         
     }
     var movieplayer:MPMoviePlayerController?

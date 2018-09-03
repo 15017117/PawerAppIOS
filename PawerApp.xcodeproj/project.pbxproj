@@ -166,12 +166,12 @@
 				840DCDFD20FF41ED00AE405F /* RegisterController.swift */,
 				84EB1F2B20FDC8F60026BDCB /* DesignableTextField.swift */,
 				846110E22123F9BF00A65BD5 /* WelcomeController.swift */,
+				843E4AD62125526300F2BAC4 /* EditProfileController.swift */,
 				84EB1F0120FD82650026BDCB /* Main.storyboard */,
 				84EB1F0420FD82670026BDCB /* Assets.xcassets */,
 				84EB1F0620FD82670026BDCB /* LaunchScreen.storyboard */,
 				84EB1F0920FD82670026BDCB /* Info.plist */,
 				846110E42124050F00A65BD5 /* pawer_app_video.mp4 */,
-				843E4AD62125526300F2BAC4 /* EditProfileController.swift */,
 			);
 			path = PawerApp;
 			sourceTree = "<group>";

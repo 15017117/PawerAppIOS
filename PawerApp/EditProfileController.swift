@@ -19,12 +19,11 @@ class EditProfileController : UIViewController{
     @IBOutlet weak var username: DesignableTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request(URL_USER_Profile, method: .get, parameters: ["user_firstName": firstName.text!, "user_lastname": lastName.text!, "user_username": username.text!], encoding: JSONEncoding.default, headers: nil)
-        
-      
-        
-        
-        
+     let defaultValues = UserDefaults.standard
+        print(defaultValues)
+        if let getusername = defaultValues.string(forKey: "username"){
+            username.text = getusername
+    }
         lastName.layer.cornerRadius = 15.0
         lastName.clipsToBounds = true
         lastName.layer.masksToBounds = false
