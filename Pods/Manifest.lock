@@ -1,16 +1,24 @@
 PODS:
   - Alamofire (4.7.3)
+  - KeyboardLayoutHelper (0.0.2)
+  - UnderKeyboard (11.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
+  - KeyboardLayoutHelper
+  - UnderKeyboard (~> 11.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - KeyboardLayoutHelper
+    - UnderKeyboard
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  KeyboardLayoutHelper: 9439b8296cb96c79c3531492ff307907a11d5d48
+  UnderKeyboard: 15e672054b36584c2110d14756729fc338a90ca5
 
-PODFILE CHECKSUM: 457cd71bc4ec228c04efcea4d4986f43f96aa25c
+PODFILE CHECKSUM: d694e3570e7c6db598ec58b1278a0cc2c49edaff
 
 COCOAPODS: 1.5.3

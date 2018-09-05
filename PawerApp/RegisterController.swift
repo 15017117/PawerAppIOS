@@ -9,11 +9,15 @@
 
 import UIKit
 import Alamofire
+import KeyboardLayoutHelper
+import UnderKeyboard
 
 
-class RegisterController: UIViewController {
+
+class RegisterController: UIViewController,UITextFieldDelegate {
     
     let URL_USER_REGISTER = "http://www.ehostingcentre.com/pawer/pawer_Registration.php";
+    let underKeyboardLayoutConstraint = UnderKeyboardLayoutConstraint()
    
     @IBOutlet weak var firstName: DesignableTextField!
     @IBOutlet weak var lastName: UITextField!
@@ -121,9 +125,42 @@ class RegisterController: UIViewController {
         }
         
     }
+
     
+    let keyboardObserver = UnderKeyboardObserver()
     override func viewDidLoad() {
         super.viewDidLoad()
+        keyboardObserver.start()
+        
+       // NotificationCenter.default.addObserver(self, selector: #selector(RegisterController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+       // NotificationCenter.default.addObserver(self, selector: #selector(RegisterController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    
+        
+        firstName.delegate = self
+         lastName.delegate = self
+         email.delegate = self
+         userName.delegate = self
+         password.delegate = self
+        confirmpassword.delegate = self
+        parentAddress.delegate = self
+        parentContact.delegate = self
+        nameParent.delegate = self
+       
+        firstName.tag = 0
+        lastName.tag = 0
+        email.tag = 0
+        userName.tag = 0
+        password.tag = 0
+        confirmpassword.tag = 0
+        parentAddress.tag = 0
+        parentContact.tag = 0
+        nameParent.tag = 0
+        
+       
         btnRegister.layer.cornerRadius = 15.0;
         
         
@@ -166,6 +203,12 @@ class RegisterController: UIViewController {
 
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow,object: nil)
+          NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow,object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -213,5 +256,52 @@ class RegisterController: UIViewController {
         view.endEditing(true)
     }
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == firstName {
+            lastName.becomeFirstResponder()
+        } else if textField == lastName {
+            email.becomeFirstResponder()
+        } else if textField == email {
+            userName.becomeFirstResponder()
+        }else if textField == userName {
+            DateofBirth.becomeFirstResponder()
+        }else if textField == DateofBirth {
+            password.becomeFirstResponder()
+        } else if textField == password {
+            confirmpassword.becomeFirstResponder()
+           
+
+        }else if textField == confirmpassword{
+            parentContact.becomeFirstResponder()
+            
+        }
+        else if textField == parentContact {
+            parentAddress.becomeFirstResponder()
+        }
+        else if textField == parentAddress {
+            nameParent.becomeFirstResponder()
+        } else if textField == nameParent{
+            
+            nameParent.resignFirstResponder()
+        }
+      return true
+    }
+
+    func myFunction() {
+        print("Keyboard height: \(String(describing: keyboardObserver.currentKeyboardHeight))")
+    }
+ @objc func keyboardWillShow(notification: NSNotification) {
+       view.frame.origin.y = -100
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y = 0
+            }
+        }
+}
 }
 

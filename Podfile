@@ -9,6 +9,8 @@ target 'PawerApp' do
 
 
  pod 'Alamofire','~>4.3'
+ pod 'KeyboardLayoutHelper'
+ pod 'UnderKeyboard','~>11.0'
 
   target 'PawerAppTests' do
     inherit! :search_paths

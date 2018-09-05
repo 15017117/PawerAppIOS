@@ -3,133 +3,189 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DECE84DC850B04690604AB7C521277 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */; };
+		01F6F7BF93D0B66ECA1B85E33C101859 /* KeyboardLayoutHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58C48B342B551855926846E02A85FBC /* KeyboardLayoutHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08EDF2FC2CF4182A89FCDBBB8B617C07 /* UnderKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913835AEFE7B2E6D7D74242CBF472ED2 /* UnderKeyboard-dummy.m */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC10D3AF48EFE763ADCCC725D70C508 /* Timeline.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0DFB80683EEBA62DFF8D6AC7F30AF96 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011033DBECD6FF4031C06C8CA2168AE5 /* TaskDelegate.swift */; };
 		3A3D0FB9802BCC38CA35B237DDF907E9 /* Pods-PawerAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85DA50CBE37CC0C6C8838CD5587CA42 /* Pods-PawerAppUITests-dummy.m */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E230A0448B394DE26E688DAC8E6201E /* Request.swift */; };
-		5638BFE0719F7E8995D990481FA92362 /* Pods-PawerApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF3D75449A40DA9F3171807B3D1CEC2 /* Pods-PawerApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */; };
+		477614ED97A9180F61B4859FBAC861B8 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578DB2FB6AB492F5E2B0A8A7BC6E5D5 /* KeyboardLayoutConstraint.swift */; };
+		4C4A37ABA739767D0333F68B9656A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5043F911569C896132D0DFE816C73DAE /* Pods-PawerApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF3D75449A40DA9F3171807B3D1CEC2 /* Pods-PawerApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745AC04DD45ABF0717F9B55A8A04C325 /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A8886EE63650586A78DF4158F5EA9 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9307A6010460B305D6D381BE253A66 /* ServerTrustPolicy.swift */; };
+		6597CB9B22C0970381D2150D15AEEAC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		6C0D03EA3226E57C47F49BFC91BF4071 /* Pods-PawerAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADC9C3575A1ED453FB73ED77ABC0EC0 /* Pods-PawerAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FD136DBCC28BECEA4AD05876A5A3E59 /* Pods-PawerApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24071B309CC4801D897D9830613C9724 /* Pods-PawerApp-dummy.m */; };
+		6C467CB2496410D46DF769B48D01756A /* UnderKeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285E961D905D15884D5DA69E8273E00 /* UnderKeyboardLayoutConstraint.swift */; };
 		7A5C5F9F59E484449024FA88054A439F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5877C143D14943581E086B889C6392D /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FEDDF73A279686E0119A1BF9BA80F /* Result.swift */; };
 		7EF2E715FC87E1A72AF5D24F2508250D /* Pods-PawerAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF105571D7EAB63C6B0A1805DBB0C3 /* Pods-PawerAppTests-dummy.m */; };
 		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		88624C5CF476C2B2B1EFFC010F1316A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F50F37DFB6DC0B7B9D8C373E5A3EAE /* Alamofire-dummy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */; };
+		8E862FD962D8293896E05BDD7B7F61C8 /* UnderKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF63FA18AF82F3D63A24372C932D51BC /* UnderKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69C55A3B2ED78C43CA430D43EA0E2B /* AFError.swift */; };
+		9F49D298B968252346A87975B414D988 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D6ACBE6DC235D94A4B15BCE2F239C /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C030D0FE432F9684AB59EEA568065A52 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA0D2361DB0266903F418A09AACCAB /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48C86C0F56C11CFCBEE155557CC600 /* MultipartFormData.swift */; };
+		B9E71FFD9AFD5CF04F4F251A89DF32C2 /* KeyboardLayoutHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7398E613AFC3ACD1F208B132B10CA768 /* KeyboardLayoutHelper-dummy.m */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6082A085447CA832394BE6A5381434 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7B0042746CAE4077226D38086155D /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB42A8C3327C2FE8EB80E51917A63E0 /* Response.swift */; };
 		D00B4D17A525C55E15F9C4B4A75469AA /* Pods-PawerAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F88FECCC5438E321F80CFEDDCD784F19 /* Pods-PawerAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */; };
-		F9A8526432159871AE6660AA863AF89B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D39F7DF496310482D102AA3457C87169 /* UnderKeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BE549B3B59428E06A467C014D55FA /* UnderKeyboardObserver.swift */; };
+		E4ED989F1D312E0548EED73425431AC3 /* Pods-PawerApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24071B309CC4801D897D9830613C9724 /* Pods-PawerApp-dummy.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6772884D08B02BD38786A71CE08BE /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4643BFF50449B9D40D6433984B2A1 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479D46554CB18C6F225BCADAF4C7D9F /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		399E0A075DE55717508E8B8095032035 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E25F4BFBC99C032E334557FEBAABB519;
-			remoteInfo = "Pods-PawerApp";
-		};
-		7D60A01B3CD02ED6569F078678B5592E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E25F4BFBC99C032E334557FEBAABB519;
-			remoteInfo = "Pods-PawerApp";
-		};
-		8BBD1686367C17872E9EABD798521C0E /* PBXContainerItemProxy */ = {
+		2B50751C9DEF474FAD26CFE6C3FB8002 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		399E0A075DE55717508E8B8095032035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F9FC04E97D670CC8D428763BFEEA2F;
+			remoteInfo = "Pods-PawerApp";
+		};
+		7D44ED7EB78E92775C0CCC1A2B959E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41824BFCFC55531C7EC51D9ADAA531FC;
+			remoteInfo = KeyboardLayoutHelper;
+		};
+		7D60A01B3CD02ED6569F078678B5592E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F9FC04E97D670CC8D428763BFEEA2F;
+			remoteInfo = "Pods-PawerApp";
+		};
+		BA30F096FDFA2DC965FE35FEA5B9F0D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 979C80DE0E27DF9B2FC0E7F4031EA347;
+			remoteInfo = UnderKeyboard;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03DECE84DC850B04690604AB7C521277 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		005E9A44F3D15766AB7C8307EB07E5EB /* KeyboardLayoutHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardLayoutHelper-prefix.pch"; sourceTree = "<group>"; };
+		011033DBECD6FF4031C06C8CA2168AE5 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		056D6ACBE6DC235D94A4B15BCE2F239C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		0A59BA948C7C64D931EB15B6FAB8ED63 /* Pods-PawerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		10639EE60D216E575E434C366E5A0811 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		117EFB31D9AD9673BAF51B48596F19E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		10F7B0042746CAE4077226D38086155D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		1B2C195D39F83C7D1EC81622320B49C4 /* Pods-PawerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1E230A0448B394DE26E688DAC8E6201E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		1F168EEA84172205264E9E8ADC07EA36 /* Pods_PawerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		210971763CB2FC0DC4E378271A37BE32 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		1C9307A6010460B305D6D381BE253A66 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		1E69C55A3B2ED78C43CA430D43EA0E2B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		226372D817D53913470171B997E19DB6 /* Pods-PawerAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerAppTests-resources.sh"; sourceTree = "<group>"; };
 		24071B309CC4801D897D9830613C9724 /* Pods-PawerApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawerApp-dummy.m"; sourceTree = "<group>"; };
+		27273FD3FF758C33176A8B11A99500E4 /* UnderKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		27C6EADBF119BF8F6AB9FF95FFA7AB86 /* Pods-PawerAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawerAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DC4643BFF50449B9D40D6433984B2A1 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		2F1FB91B2CE9CF8DCC4A905E788CCDB6 /* Pods-PawerAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawerAppTests.modulemap"; sourceTree = "<group>"; };
-		32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		33A04B5D27E86AF4B84D95E21CF3F452 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		33C6E0CC144415EDA545BEDAF7AE1047 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389BDEB691B9C06A671192DB4C6665AF /* UnderKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UnderKeyboard.framework; path = UnderKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4285E961D905D15884D5DA69E8273E00 /* UnderKeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardLayoutConstraint.swift; path = UnderKeyboard/UnderKeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		43A3A15FCF87DE349D7668BDB4833D46 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		48CD7D4D0D0BEC6DD4952BE7FF386AE4 /* Pods-PawerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		49DF05105BB008B88409D4BE2E2094A8 /* KeyboardLayoutHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeyboardLayoutHelper.framework; path = KeyboardLayoutHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C1C1C54D077F7573A3F23E37DDA776 /* Pods-PawerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerApp.release.xcconfig"; sourceTree = "<group>"; };
+		58C1E7FFDACB7E20278DE761084E294B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5E32E1D312F03732D08551B5B974C064 /* Pods-PawerAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerAppTests-frameworks.sh"; sourceTree = "<group>"; };
-		61D920D6E48023BCBF18CD83450D05F5 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		660BE549B3B59428E06A467C014D55FA /* UnderKeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardObserver.swift; path = UnderKeyboard/UnderKeyboardObserver.swift; sourceTree = "<group>"; };
 		66A3A1512839A25298A5C349EBC703BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		6CF3D75449A40DA9F3171807B3D1CEC2 /* Pods-PawerApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawerApp-umbrella.h"; sourceTree = "<group>"; };
 		6CFF105571D7EAB63C6B0A1805DBB0C3 /* Pods-PawerAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawerAppTests-dummy.m"; sourceTree = "<group>"; };
+		6E85BD3F1952B0BD1380C0DE19B4C819 /* Pods_PawerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawerAppUITests.framework; path = "Pods-PawerAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7398E613AFC3ACD1F208B132B10CA768 /* KeyboardLayoutHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeyboardLayoutHelper-dummy.m"; sourceTree = "<group>"; };
+		745AC04DD45ABF0717F9B55A8A04C325 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		76AF5EDB1B2847A484E48D97CBAA3892 /* Pods-PawerApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerApp-resources.sh"; sourceTree = "<group>"; };
 		7B1B802088ED5B32E1E2D1A51BBD9A44 /* Pods-PawerApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawerApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		7B6082A085447CA832394BE6A5381434 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7D666DEB9CAC1089D194AE3120AD42D3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0BD0B44E63AA057320BA0870D781F5 /* KeyboardLayoutHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeyboardLayoutHelper.xcconfig; sourceTree = "<group>"; };
 		8ADC9C3575A1ED453FB73ED77ABC0EC0 /* Pods-PawerAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawerAppUITests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B9096A6790341035E5C6E7565C083B9 /* Pods_PawerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913835AEFE7B2E6D7D74242CBF472ED2 /* UnderKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnderKeyboard-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		984A8886EE63650586A78DF4158F5EA9 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9D46DC715D0F7F698092A769E82D2869 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		9D48C86C0F56C11CFCBEE155557CC600 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		A2C17308D92A1D99EC8723AD21A315ED /* KeyboardLayoutHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeyboardLayoutHelper.modulemap; sourceTree = "<group>"; };
+		A479D46554CB18C6F225BCADAF4C7D9F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A4F3936698029F05345367E70CD9C5C1 /* UnderKeyboard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnderKeyboard.xcconfig; sourceTree = "<group>"; };
+		A76E2C12BE91EDEE4BE35FD059AC7ABA /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		A85DA50CBE37CC0C6C8838CD5587CA42 /* Pods-PawerAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawerAppUITests-dummy.m"; sourceTree = "<group>"; };
 		AB50A44EC03A13331BFC371ACB89EEC7 /* Pods-PawerApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerApp-frameworks.sh"; sourceTree = "<group>"; };
-		B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		ABB42A8C3327C2FE8EB80E51917A63E0 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		B48BE026B849F60EEA1BD40197CFE062 /* Pods-PawerAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawerAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B532919767972A3F149C78AD1A2E9242 /* Pods-PawerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B578DB2FB6AB492F5E2B0A8A7BC6E5D5 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = KeyboardLayoutHelper/Classes/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		B58C48B342B551855926846E02A85FBC /* KeyboardLayoutHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardLayoutHelper-umbrella.h"; sourceTree = "<group>"; };
 		B842DE28511B7423910265D16DB82D91 /* Pods-PawerAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BAAA0D2361DB0266903F418A09AACCAB /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		BF2FEDDF73A279686E0119A1BF9BA80F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		C030D0FE432F9684AB59EEA568065A52 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		C5877C143D14943581E086B889C6392D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		C72AA135AA49F16ED328613195D26E36 /* Pods-PawerApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawerApp.modulemap"; sourceTree = "<group>"; };
 		C7A56AC0EDB522AB6BB76E2B1F160BF7 /* Pods-PawerAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawerAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D1F50F37DFB6DC0B7B9D8C373E5A3EAE /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		D578F566A5BE8C250DE9764579A90DD4 /* Pods_PawerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC10D3AF48EFE763ADCCC725D70C508 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		CEC6772884D08B02BD38786A71CE08BE /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		D8B28C98F8800F3F9AE9C516F7344838 /* UnderKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UnderKeyboard.modulemap; sourceTree = "<group>"; };
 		D982CCECD1925954D30B56D6D6916F19 /* Pods-PawerApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawerApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE420F7271B1DEAD4AA405F45AAFB64B /* Pods-PawerAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawerAppUITests-resources.sh"; sourceTree = "<group>"; };
-		DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		DF63FA18AF82F3D63A24372C932D51BC /* UnderKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnderKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		E0DFB80683EEBA62DFF8D6AC7F30AF96 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		E11BCCF369C2F044B605372C5720D0A7 /* Pods-PawerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		E9385B37E1F7005DBEFEE77EF517F7D4 /* Pods-PawerAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawerAppUITests.modulemap"; sourceTree = "<group>"; };
+		EC41015F30C25A64C1F0814A73674086 /* Pods_PawerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawerApp.framework; path = "Pods-PawerApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0232978092DEBF4B4439A424F035F9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06D3D0B706FBBC922CBA84925D36D44 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		F7480768392CABEEBA2CAFAC653CB632 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88FECCC5438E321F80CFEDDCD784F19 /* Pods-PawerAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawerAppTests-umbrella.h"; sourceTree = "<group>"; };
+		FB386321665C838598B8DAB848B97D3E /* Pods_PawerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawerAppTests.framework; path = "Pods-PawerAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF44037C7167C7853FD9AEEF0C882E7 /* Pods-PawerAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawerAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2396E35CC810DB506180308E68284F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6597CB9B22C0970381D2150D15AEEAC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D6B7CBB6AC45151993888AC64250DB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7A5C5F9F59E484449024FA88054A439F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AAE8B1AEE0859FF09AD356D7B1C4891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F49D298B968252346A87975B414D988 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,17 +205,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C67E9BC2CB6CC303FA47B855F48F118A /* Frameworks */ = {
+		ED6903A5A445C679D63D58AC6F1963D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A8526432159871AE6660AA863AF89B /* Foundation.framework in Frameworks */,
+				4C4A37ABA739767D0333F68B9656A8D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19493CECD1213BCBE2ABA281F6CF0F64 /* KeyboardLayoutHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B578DB2FB6AB492F5E2B0A8A7BC6E5D5 /* KeyboardLayoutConstraint.swift */,
+				3F3C2B2B9D4B6C6E1CF2C9FA655CE6D3 /* Support Files */,
+			);
+			name = KeyboardLayoutHelper;
+			path = KeyboardLayoutHelper;
+			sourceTree = "<group>";
+		};
 		1C74F9BF6BD0D7CB0242E7E67C64D059 /* Pods-PawerAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,43 +244,14 @@
 			path = "Target Support Files/Pods-PawerAppUITests";
 			sourceTree = "<group>";
 		};
-		200D10EB20F0397D47F022B50CF0433F /* Alamofire */ = {
+		256FA7E8F25FD84E0269B156FA3697AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */,
-				DFCB8C44DE758E906C0BCDA455937B85 /* Alamofire.swift */,
-				0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */,
-				155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */,
-				E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */,
-				66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */,
-				6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */,
-				1E230A0448B394DE26E688DAC8E6201E /* Request.swift */,
-				04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */,
-				E2F9510473F6FFD7AA66524DB16C2263 /* ResponseSerialization.swift */,
-				3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */,
-				32B030D27CAC730C5EB0F22390645310 /* ServerTrustPolicy.swift */,
-				195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */,
-				46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */,
-				A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */,
-				87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */,
-				B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */,
-				2E5925946A4DE3B8F7E4137BACAD9618 /* Support Files */,
+				7634CB7DCA4D75DCEC8770F2916AA308 /* Alamofire */,
+				19493CECD1213BCBE2ABA281F6CF0F64 /* KeyboardLayoutHelper */,
+				8B1B7FF9D23A95F8AA7994002A873E81 /* UnderKeyboard */,
 			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		2E5925946A4DE3B8F7E4137BACAD9618 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				210971763CB2FC0DC4E378271A37BE32 /* Alamofire.modulemap */,
-				33A04B5D27E86AF4B84D95E21CF3F452 /* Alamofire.xcconfig */,
-				D1F50F37DFB6DC0B7B9D8C373E5A3EAE /* Alamofire-dummy.m */,
-				61D920D6E48023BCBF18CD83450D05F5 /* Alamofire-prefix.pch */,
-				03DECE84DC850B04690604AB7C521277 /* Alamofire-umbrella.h */,
-				117EFB31D9AD9673BAF51B48596F19E2 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		3358044F7017606774F7ADF165AA8D05 /* Pods-PawerApp */ = {
@@ -235,23 +272,18 @@
 			path = "Target Support Files/Pods-PawerApp";
 			sourceTree = "<group>";
 		};
-		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
+		3F3C2B2B9D4B6C6E1CF2C9FA655CE6D3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				200D10EB20F0397D47F022B50CF0433F /* Alamofire */,
+				33C6E0CC144415EDA545BEDAF7AE1047 /* Info.plist */,
+				A2C17308D92A1D99EC8723AD21A315ED /* KeyboardLayoutHelper.modulemap */,
+				7E0BD0B44E63AA057320BA0870D781F5 /* KeyboardLayoutHelper.xcconfig */,
+				7398E613AFC3ACD1F208B132B10CA768 /* KeyboardLayoutHelper-dummy.m */,
+				005E9A44F3D15766AB7C8307EB07E5EB /* KeyboardLayoutHelper-prefix.pch */,
+				B58C48B342B551855926846E02A85FBC /* KeyboardLayoutHelper-umbrella.h */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		473C46653AE7C1D9E3FC61C92D6DD28E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				10639EE60D216E575E434C366E5A0811 /* Alamofire.framework */,
-				D578F566A5BE8C250DE9764579A90DD4 /* Pods_PawerApp.framework */,
-				9B9096A6790341035E5C6E7565C083B9 /* Pods_PawerAppTests.framework */,
-				1F168EEA84172205264E9E8ADC07EA36 /* Pods_PawerAppUITests.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/KeyboardLayoutHelper";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -262,13 +294,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7634CB7DCA4D75DCEC8770F2916AA308 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1E69C55A3B2ED78C43CA430D43EA0E2B /* AFError.swift */,
+				A479D46554CB18C6F225BCADAF4C7D9F /* Alamofire.swift */,
+				984A8886EE63650586A78DF4158F5EA9 /* DispatchQueue+Alamofire.swift */,
+				9D48C86C0F56C11CFCBEE155557CC600 /* MultipartFormData.swift */,
+				056D6ACBE6DC235D94A4B15BCE2F239C /* NetworkReachabilityManager.swift */,
+				CEC6772884D08B02BD38786A71CE08BE /* Notifications.swift */,
+				10F7B0042746CAE4077226D38086155D /* ParameterEncoding.swift */,
+				745AC04DD45ABF0717F9B55A8A04C325 /* Request.swift */,
+				ABB42A8C3327C2FE8EB80E51917A63E0 /* Response.swift */,
+				2DC4643BFF50449B9D40D6433984B2A1 /* ResponseSerialization.swift */,
+				BF2FEDDF73A279686E0119A1BF9BA80F /* Result.swift */,
+				1C9307A6010460B305D6D381BE253A66 /* ServerTrustPolicy.swift */,
+				C5877C143D14943581E086B889C6392D /* SessionDelegate.swift */,
+				BAAA0D2361DB0266903F418A09AACCAB /* SessionManager.swift */,
+				011033DBECD6FF4031C06C8CA2168AE5 /* TaskDelegate.swift */,
+				CEC10D3AF48EFE763ADCCC725D70C508 /* Timeline.swift */,
+				7B6082A085447CA832394BE6A5381434 /* Validation.swift */,
+				BA6CC5EFEC76CC7AA862E0804BD87879 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */,
-				473C46653AE7C1D9E3FC61C92D6DD28E /* Products */,
+				256FA7E8F25FD84E0269B156FA3697AC /* Pods */,
+				DDAB62A903D5AB4C2174E77CB25F4FF7 /* Products */,
 				E0C26AA5F09BBB862EFCEB5C5FDB6F4F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -291,12 +349,50 @@
 			path = "Target Support Files/Pods-PawerAppTests";
 			sourceTree = "<group>";
 		};
+		8B1B7FF9D23A95F8AA7994002A873E81 /* UnderKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4285E961D905D15884D5DA69E8273E00 /* UnderKeyboardLayoutConstraint.swift */,
+				660BE549B3B59428E06A467C014D55FA /* UnderKeyboardObserver.swift */,
+				F1ACD48BD0DEBED3821974F57FF30940 /* Support Files */,
+			);
+			name = UnderKeyboard;
+			path = UnderKeyboard;
+			sourceTree = "<group>";
+		};
+		BA6CC5EFEC76CC7AA862E0804BD87879 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F06D3D0B706FBBC922CBA84925D36D44 /* Alamofire.modulemap */,
+				43A3A15FCF87DE349D7668BDB4833D46 /* Alamofire.xcconfig */,
+				C030D0FE432F9684AB59EEA568065A52 /* Alamofire-dummy.m */,
+				A76E2C12BE91EDEE4BE35FD059AC7ABA /* Alamofire-prefix.pch */,
+				E0DFB80683EEBA62DFF8D6AC7F30AF96 /* Alamofire-umbrella.h */,
+				F0232978092DEBF4B4439A424F035F9A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDAB62A903D5AB4C2174E77CB25F4FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D666DEB9CAC1089D194AE3120AD42D3 /* Alamofire.framework */,
+				49DF05105BB008B88409D4BE2E2094A8 /* KeyboardLayoutHelper.framework */,
+				EC41015F30C25A64C1F0814A73674086 /* Pods_PawerApp.framework */,
+				FB386321665C838598B8DAB848B97D3E /* Pods_PawerAppTests.framework */,
+				6E85BD3F1952B0BD1380C0DE19B4C819 /* Pods_PawerAppUITests.framework */,
+				389BDEB691B9C06A671192DB4C6665AF /* UnderKeyboard.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E0C26AA5F09BBB862EFCEB5C5FDB6F4F /* Targets Support Files */ = {
@@ -309,22 +405,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F1ACD48BD0DEBED3821974F57FF30940 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58C1E7FFDACB7E20278DE761084E294B /* Info.plist */,
+				D8B28C98F8800F3F9AE9C516F7344838 /* UnderKeyboard.modulemap */,
+				A4F3936698029F05345367E70CD9C5C1 /* UnderKeyboard.xcconfig */,
+				913835AEFE7B2E6D7D74242CBF472ED2 /* UnderKeyboard-dummy.m */,
+				27273FD3FF758C33176A8B11A99500E4 /* UnderKeyboard-prefix.pch */,
+				DF63FA18AF82F3D63A24372C932D51BC /* UnderKeyboard-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UnderKeyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3326D1DB040F1585CD93029CEE9DDCF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E862FD962D8293896E05BDD7B7F61C8 /* UnderKeyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39098E02B0C0400C811717CC468A52F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5043F911569C896132D0DFE816C73DAE /* Pods-PawerApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F692285B5AC78E87C464A5B357CC963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F6F7BF93D0B66ECA1B85E33C101859 /* KeyboardLayoutHelper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB249C31818EAE4654D81E7BADE8039B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5638BFE0719F7E8995D990481FA92362 /* Pods-PawerApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +473,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		17F9FC04E97D670CC8D428763BFEEA2F /* Pods-PawerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CE9598CEFA1DE93AB6DD22211F643E /* Build configuration list for PBXNativeTarget "Pods-PawerApp" */;
+			buildPhases = (
+				3A7EC3A813A7A10E85062A78C676D783 /* Sources */,
+				ED6903A5A445C679D63D58AC6F1963D6 /* Frameworks */,
+				39098E02B0C0400C811717CC468A52F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0BD7441CAD8352AC90D4177409E14E4 /* PBXTargetDependency */,
+				6F831801891C1D11DFB5F9C6909F297F /* PBXTargetDependency */,
+				D09F09034975B830D1F20B9EB6B009FE /* PBXTargetDependency */,
+			);
+			name = "Pods-PawerApp";
+			productName = "Pods-PawerApp";
+			productReference = EC41015F30C25A64C1F0814A73674086 /* Pods_PawerApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41824BFCFC55531C7EC51D9ADAA531FC /* KeyboardLayoutHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E6582A08F79881F0DEE0F24D84F4C8 /* Build configuration list for PBXNativeTarget "KeyboardLayoutHelper" */;
+			buildPhases = (
+				BC0BA8471FFC0E5A2DDCE145F56A00DF /* Sources */,
+				8AAE8B1AEE0859FF09AD356D7B1C4891 /* Frameworks */,
+				5F692285B5AC78E87C464A5B357CC963 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardLayoutHelper;
+			productName = KeyboardLayoutHelper;
+			productReference = 49DF05105BB008B88409D4BE2E2094A8 /* KeyboardLayoutHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		53496139569EE78B7DACBA7DFF6D779F /* Pods-PawerAppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDB59A36EF52E61CA0D18400B3C01750 /* Build configuration list for PBXNativeTarget "Pods-PawerAppTests" */;
@@ -362,7 +525,7 @@
 			);
 			name = "Pods-PawerAppTests";
 			productName = "Pods-PawerAppTests";
-			productReference = 9B9096A6790341035E5C6E7565C083B9 /* Pods_PawerAppTests.framework */;
+			productReference = FB386321665C838598B8DAB848B97D3E /* Pods_PawerAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8773CD6CD34DDE91F20D3CDF72E28318 /* Pods-PawerAppUITests */ = {
@@ -380,7 +543,7 @@
 			);
 			name = "Pods-PawerAppUITests";
 			productName = "Pods-PawerAppUITests";
-			productReference = 1F168EEA84172205264E9E8ADC07EA36 /* Pods_PawerAppUITests.framework */;
+			productReference = 6E85BD3F1952B0BD1380C0DE19B4C819 /* Pods_PawerAppUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -397,25 +560,24 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 10639EE60D216E575E434C366E5A0811 /* Alamofire.framework */;
+			productReference = 7D666DEB9CAC1089D194AE3120AD42D3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E25F4BFBC99C032E334557FEBAABB519 /* Pods-PawerApp */ = {
+		979C80DE0E27DF9B2FC0E7F4031EA347 /* UnderKeyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD8973F220B9924E9797FEFC144AC026 /* Build configuration list for PBXNativeTarget "Pods-PawerApp" */;
+			buildConfigurationList = 6AF2DFB53D6F3E74A86BF634A9679F78 /* Build configuration list for PBXNativeTarget "UnderKeyboard" */;
 			buildPhases = (
-				4BCE3FB80BFC14938F2DC4DFCA99ED23 /* Sources */,
-				C67E9BC2CB6CC303FA47B855F48F118A /* Frameworks */,
-				CB249C31818EAE4654D81E7BADE8039B /* Headers */,
+				D24AE8F41B43FF3EE5C358A96CB99978 /* Sources */,
+				2396E35CC810DB506180308E68284F25 /* Frameworks */,
+				3326D1DB040F1585CD93029CEE9DDCF6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FFD224FF94BB9CA157F40935B357B3FC /* PBXTargetDependency */,
 			);
-			name = "Pods-PawerApp";
-			productName = "Pods-PawerApp";
-			productReference = D578F566A5BE8C250DE9764579A90DD4 /* Pods_PawerApp.framework */;
+			name = UnderKeyboard;
+			productName = UnderKeyboard;
+			productReference = 389BDEB691B9C06A671192DB4C6665AF /* UnderKeyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -425,7 +587,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -435,14 +597,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 473C46653AE7C1D9E3FC61C92D6DD28E /* Products */;
+			productRefGroup = DDAB62A903D5AB4C2174E77CB25F4FF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				E25F4BFBC99C032E334557FEBAABB519 /* Pods-PawerApp */,
+				41824BFCFC55531C7EC51D9ADAA531FC /* KeyboardLayoutHelper */,
+				17F9FC04E97D670CC8D428763BFEEA2F /* Pods-PawerApp */,
 				53496139569EE78B7DACBA7DFF6D779F /* Pods-PawerAppTests */,
 				8773CD6CD34DDE91F20D3CDF72E28318 /* Pods-PawerAppUITests */,
+				979C80DE0E27DF9B2FC0E7F4031EA347 /* UnderKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -481,6 +645,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A7EC3A813A7A10E85062A78C676D783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4ED989F1D312E0548EED73425431AC3 /* Pods-PawerApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FB3169EE25D18FA580EEF9031432082 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,11 +661,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BCE3FB80BFC14938F2DC4DFCA99ED23 /* Sources */ = {
+		BC0BA8471FFC0E5A2DDCE145F56A00DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD136DBCC28BECEA4AD05876A5A3E59 /* Pods-PawerApp-dummy.m in Sources */,
+				477614ED97A9180F61B4859FBAC861B8 /* KeyboardLayoutConstraint.swift in Sources */,
+				B9E71FFD9AFD5CF04F4F251A89DF32C2 /* KeyboardLayoutHelper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24AE8F41B43FF3EE5C358A96CB99978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EDF2FC2CF4182A89FCDBBB8B617C07 /* UnderKeyboard-dummy.m in Sources */,
+				6C467CB2496410D46DF769B48D01756A /* UnderKeyboardLayoutConstraint.swift in Sources */,
+				D39F7DF496310482D102AA3457C87169 /* UnderKeyboardObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,24 +686,76 @@
 		6D05A106BE4D20437F882F14655E6A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PawerApp";
-			target = E25F4BFBC99C032E334557FEBAABB519 /* Pods-PawerApp */;
+			target = 17F9FC04E97D670CC8D428763BFEEA2F /* Pods-PawerApp */;
 			targetProxy = 399E0A075DE55717508E8B8095032035 /* PBXContainerItemProxy */;
+		};
+		6F831801891C1D11DFB5F9C6909F297F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardLayoutHelper;
+			target = 41824BFCFC55531C7EC51D9ADAA531FC /* KeyboardLayoutHelper */;
+			targetProxy = 7D44ED7EB78E92775C0CCC1A2B959E68 /* PBXContainerItemProxy */;
 		};
 		980DD53C2EC0C7DC9866F06D107CFD2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PawerApp";
-			target = E25F4BFBC99C032E334557FEBAABB519 /* Pods-PawerApp */;
+			target = 17F9FC04E97D670CC8D428763BFEEA2F /* Pods-PawerApp */;
 			targetProxy = 7D60A01B3CD02ED6569F078678B5592E /* PBXContainerItemProxy */;
 		};
-		FFD224FF94BB9CA157F40935B357B3FC /* PBXTargetDependency */ = {
+		D09F09034975B830D1F20B9EB6B009FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnderKeyboard;
+			target = 979C80DE0E27DF9B2FC0E7F4031EA347 /* UnderKeyboard */;
+			targetProxy = BA30F096FDFA2DC965FE35FEA5B9F0D1 /* PBXContainerItemProxy */;
+		};
+		F0BD7441CAD8352AC90D4177409E14E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 8BBD1686367C17872E9EABD798521C0E /* PBXContainerItemProxy */;
+			targetProxy = 2B50751C9DEF474FAD26CFE6C3FB8002 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0391123410C1C07999B49A51F6DF578F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C1C1C54D077F7573A3F23E37DDA776 /* Pods-PawerApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawerApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawerApp/Pods-PawerApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -584,12 +819,10 @@
 			};
 			name = Debug;
 		};
-		6C279A39E8F37CC67162BAFA111C6651 /* Release */ = {
+		5E95DE6AB4E1E1491897B945F1A7DA11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51C1C1C54D077F7573A3F23E37DDA776 /* Pods-PawerApp.release.xcconfig */;
+			baseConfigurationReference = A4F3936698029F05345367E70CD9C5C1 /* UnderKeyboard.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -599,26 +832,64 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawerApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderKeyboard/UnderKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderKeyboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawerApp/Pods-PawerApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = UnderKeyboard;
+				PRODUCT_NAME = UnderKeyboard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		6ACAB1E5D43830F6E5311C182BE6414F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0BD0B44E63AA057320BA0870D781F5 /* KeyboardLayoutHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardLayoutHelper/KeyboardLayoutHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyboardLayoutHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyboardLayoutHelper/KeyboardLayoutHelper.modulemap";
+				PRODUCT_MODULE_NAME = KeyboardLayoutHelper;
+				PRODUCT_NAME = KeyboardLayoutHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		7173EB2CD82EE57F39095F1CE727C3F5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -638,7 +909,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-PawerAppUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -655,9 +930,46 @@
 			};
 			name = Release;
 		};
+		73B6081924AA4C78E8D4574606B30C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0BD0B44E63AA057320BA0870D781F5 /* KeyboardLayoutHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardLayoutHelper/KeyboardLayoutHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyboardLayoutHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyboardLayoutHelper/KeyboardLayoutHelper.modulemap";
+				PRODUCT_MODULE_NAME = KeyboardLayoutHelper;
+				PRODUCT_NAME = KeyboardLayoutHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A18C9CC7E37563F2891E7DC87F2DE6CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A04B5D27E86AF4B84D95E21CF3F452 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 43A3A15FCF87DE349D7668BDB4833D46 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -672,7 +984,11 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -706,7 +1022,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-PawerAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -777,8 +1097,84 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BD4C2A5C2ABB49157849FA69669EEC85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48CD7D4D0D0BEC6DD4952BE7FF386AE4 /* Pods-PawerApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawerApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawerApp/Pods-PawerApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2F781FEAB2FD59DAD25704C02DCCB7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F3936698029F05345367E70CD9C5C1 /* UnderKeyboard.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnderKeyboard/UnderKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnderKeyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UnderKeyboard/UnderKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = UnderKeyboard;
+				PRODUCT_NAME = UnderKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -800,7 +1196,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-PawerAppUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -810,42 +1210,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C8B9E8E3D13E0CACCE5A5C4E5D954D93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48CD7D4D0D0BEC6DD4952BE7FF386AE4 /* Pods-PawerApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawerApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawerApp/Pods-PawerApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -870,7 +1234,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-PawerAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -888,7 +1256,7 @@
 		};
 		EA0ADC75B20BB62958101306980460E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A04B5D27E86AF4B84D95E21CF3F452 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 43A3A15FCF87DE349D7668BDB4833D46 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -903,7 +1271,11 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -939,6 +1311,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6AF2DFB53D6F3E74A86BF634A9679F78 /* Build configuration list for PBXNativeTarget "UnderKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E95DE6AB4E1E1491897B945F1A7DA11 /* Debug */,
+				C2F781FEAB2FD59DAD25704C02DCCB7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6ECE3623597F691FF0D68E50212A7777 /* Build configuration list for PBXNativeTarget "Pods-PawerAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -948,11 +1329,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD8973F220B9924E9797FEFC144AC026 /* Build configuration list for PBXNativeTarget "Pods-PawerApp" */ = {
+		85CE9598CEFA1DE93AB6DD22211F643E /* Build configuration list for PBXNativeTarget "Pods-PawerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8B9E8E3D13E0CACCE5A5C4E5D954D93 /* Debug */,
-				6C279A39E8F37CC67162BAFA111C6651 /* Release */,
+				BD4C2A5C2ABB49157849FA69669EEC85 /* Debug */,
+				0391123410C1C07999B49A51F6DF578F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85E6582A08F79881F0DEE0F24D84F4C8 /* Build configuration list for PBXNativeTarget "KeyboardLayoutHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACAB1E5D43830F6E5311C182BE6414F /* Debug */,
+				73B6081924AA4C78E8D4574606B30C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
