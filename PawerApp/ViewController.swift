@@ -13,8 +13,8 @@ import QuartzCore
 class ViewController: UIViewController {
     
     let URL_USER_LOGIN = "http://www.ehostingcentre.com/pawer/loginuser.php";
-    //let defaultValues = UserDefaults.standard
-    let defaultValues:UserDefaults = UserDefaults.standard
+   
+    //let defaultValues:UserDefaults = UserDefaults.standard
     
     @IBOutlet weak var emailTextField: DesignableTextField!
     
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+          let defaultValues = UserDefaults.standard
         
         
         
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func LoginButton(_ sender: UIButton) {
+        let defaultValues = UserDefaults.standard
         //getting the username and password
         let parameters: Parameters = [
             "user_email": emailTextField.text!,
@@ -68,27 +70,30 @@ class ViewController: UIViewController {
             //getting the JSON value from the server
             
             let convertResponse =  response.result.value as!NSDictionary
-            var getStatus = convertResponse.value(forKey: "status")! as! Int
+            let getStatus = convertResponse.value(forKey: "status")! as! Int
           
             
           if(getStatus == 200){
-                let user = convertResponse.value(forKey: "users")as! NSArray
+            let user = convertResponse.value(forKey: "users")! as!
+            NSArray
             
             print(user)
+            let user_username = user.value(forKey: "user_username")as! [String]
+           // print(user_username[0])
+                let user_firstname = user.value(forKey: "user_firstname")as! [String]
+                let user_lastname = user.value(forKey: "user_lastname")as!
+                    [String]
+                let user_email = user.value(forKey: "user_email")as![String]
+           // print(user_email)
             
             
-            let user_username = user.value(forKey: "user_username")
-
+            defaultValues.set(user_username[0], forKey: "user_username")
+         
+            defaultValues.set(user_firstname[0], forKey: "user_firstname")
+            defaultValues.set(user_lastname[0], forKey:"user_lastname")
+            defaultValues.set(user_email[0], forKey: "user_email")
             
-            print(user_username);
-                let user_firstname = user.value(forKey: "user_firstname")
-                let user_lastname = user.value(forKey: "user_lastname")
-            
-            self.defaultValues.set(user_username, forKey: "user_username")
-                self.defaultValues.set(user_firstname, forKey: "user_firstname")
-                self.defaultValues.set(user_lastname, forKey:"user_lastname")
-            
-            print("User Default  NAME :: \(String(describing: UserDefaults.standard.string(forKey: "user_username" )))")
+          
 
 //                    switching the screen
             
@@ -101,20 +106,26 @@ class ViewController: UIViewController {
             self.show(vc, sender: self)
     
           } else if(getStatus == 201){
+            let defaultValues = UserDefaults.standard
             let alert = UIAlertController(title: "Alert!!!", message: "Waiting for Approval from parent", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
            
             self.present(alert, animated: true, completion: nil)
             
-            let user = convertResponse.value(forKey: "users")as! NSArray
-            let user_username = user.value(forKey: "user_username")
-            let user_firstname = user.value(forKey: "user_firstname")
-            let user_lastname = user.value(forKey: "user_lastname")
+            let user = convertResponse.value(forKey: "users")! as!
+            NSArray
             
-            self.defaultValues.set(user_username, forKey: "username")
-            self.defaultValues.set(user_firstname, forKey: "user_firstname")
-            self.defaultValues.set(user_lastname, forKey:"user_lastname")
+            //print(user)
+            let user_username = user.value(forKey: "user_username")as! [String]
+            // print(user_username[0])
+            let user_firstname = user.value(forKey: "user_firstname")as! [String]
+            let user_lastname = user.value(forKey: "user_lastname")as!
+                [String]
             
+            defaultValues.set(user_username[0], forKey: "user_username")
+            
+            defaultValues.set(user_firstname[0], forKey: "user_firstname")
+            defaultValues.set(user_lastname[0], forKey:"user_lastname")
             let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
             self.show(vc, sender: self)
@@ -124,9 +135,6 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
             
             self.present(alert, animated: true, completion: nil)
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
-            self.show(vc, sender: self)
             
           }
             

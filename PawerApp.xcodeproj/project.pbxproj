@@ -17,6 +17,8 @@
 		843E4AD72125526300F2BAC4 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4AD62125526300F2BAC4 /* EditProfileController.swift */; };
 		846110E32123F9BF00A65BD5 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846110E22123F9BF00A65BD5 /* WelcomeController.swift */; };
 		846110E521240E8500A65BD5 /* pawer_app_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 846110E42124050F00A65BD5 /* pawer_app_video.mp4 */; };
+		8491CD16213E362500F62F45 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491CD15213E362500F62F45 /* PrivacyPolicy.swift */; };
+		8491CD18213E395A00F62F45 /* TermsofUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491CD17213E395A00F62F45 /* TermsofUse.swift */; };
 		84EB1EFE20FD82650026BDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1EFD20FD82650026BDCB /* AppDelegate.swift */; };
 		84EB1F0020FD82650026BDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1EFF20FD82650026BDCB /* ViewController.swift */; };
 		84EB1F0320FD82650026BDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB1F0120FD82650026BDCB /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		843E4AD62125526300F2BAC4 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		846110E22123F9BF00A65BD5 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		846110E42124050F00A65BD5 /* pawer_app_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = pawer_app_video.mp4; path = ../../../Downloads/pawer_app_video.mp4; sourceTree = "<group>"; };
+		8491CD15213E362500F62F45 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
+		8491CD17213E395A00F62F45 /* TermsofUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsofUse.swift; sourceTree = "<group>"; };
 		84EB1EFA20FD82650026BDCB /* PawerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB1EFD20FD82650026BDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EB1EFF20FD82650026BDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				840DCDFD20FF41ED00AE405F /* RegisterController.swift */,
 				84EB1F2B20FDC8F60026BDCB /* DesignableTextField.swift */,
 				846110E22123F9BF00A65BD5 /* WelcomeController.swift */,
+				8491CD17213E395A00F62F45 /* TermsofUse.swift */,
+				8491CD15213E362500F62F45 /* PrivacyPolicy.swift */,
 				843E4AD62125526300F2BAC4 /* EditProfileController.swift */,
 				84EB1F0120FD82650026BDCB /* Main.storyboard */,
 				84EB1F0420FD82670026BDCB /* Assets.xcassets */,
@@ -416,6 +422,8 @@
 				840DCDFE20FF41ED00AE405F /* RegisterController.swift in Sources */,
 				84EB1F2C20FDC8F60026BDCB /* DesignableTextField.swift in Sources */,
 				84EB1EFE20FD82650026BDCB /* AppDelegate.swift in Sources */,
+				8491CD18213E395A00F62F45 /* TermsofUse.swift in Sources */,
+				8491CD16213E362500F62F45 /* PrivacyPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

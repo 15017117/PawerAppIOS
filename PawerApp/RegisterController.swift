@@ -14,7 +14,7 @@ import Alamofire
 class RegisterController: UIViewController {
     
     let URL_USER_REGISTER = "http://www.ehostingcentre.com/pawer/pawer_Registration.php";
-    
+   
     @IBOutlet weak var firstName: DesignableTextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var email: DesignableTextField!
@@ -32,7 +32,7 @@ class RegisterController: UIViewController {
    
     @IBOutlet weak var btnRegister: UIButton!
     
-    var unchecked = true
+    var unchecked = false
     @IBAction func tick(_ sender: UIButton) {
     
         if unchecked{
@@ -64,27 +64,60 @@ class RegisterController: UIViewController {
         Alamofire.request(URL_USER_REGISTER,method: .post,parameters: parameters).responseJSON{
             response in
             print(response)
-            
-            if let result = response.result.value{
-                let jsonData = result as! NSDictionary
-                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
-                self.show(vc, sender: self)
-                UserDefaults.standard.set(true, forKey: "isLoggedIn")
-                UserDefaults.standard.synchronize()
-                
+            //getting the JSON value from the server
+            let defaultValues = UserDefaults.standard
+            let convertResponse  = response.result.value as!NSDictionary
+            let getStatus = convertResponse.value(forKey: "status")! as! Int
+                var a  = false
+                var b = false
+                if self.unchecked == true{
+                    if self.password.text == self.confirmpassword.text{
+                        print(self.password.text == self.confirmpassword.text)
+                    a = true
+                    if(getStatus == 200){
+                    
+                    let user = convertResponse.value(forKey: "users")! as!NSArray
+                    
+                    print(user)
+                    
+                    let user_username = user.value(forKey: "user_username") as! [String]
+                    
+                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
+                    
+                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
+                    let user_email = user.value(forKey: "user_email")as! [String]
+                    
+                    defaultValues.set(user_username[0], forKey: "user_username")
+                    
+                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
+                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
+                    defaultValues.set(user_email[0], forKey: "user_email")
+                   
+                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
+                    self.show(vc, sender: self)
+                } else{
+                        
+                        let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email!", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "Re-Enter", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    
+                    }
+                } else{
+                        
+                    
+                        let alert = UIAlertController(title: "Alert!!!", message: "Password & Confirm Password Doesn't Match", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "Re-enter Password", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+         
+                    
+            } else {
+                    let alert = UIAlertController(title: "Alert!!!", message: "Need to checked the Term of Use and Privacy Policy", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
             }
-        }
         
-        var a  = false
-        var b = false
-        if password.text == confirmpassword.text{
-            a = true
-        }
-        else{
-            let alert = UIAlertController(title: "Alert!!!", message: "Password & Confirm Password Doesn't Match", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Re-enter Password", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
         }
         
     }
@@ -163,6 +196,13 @@ class RegisterController: UIViewController {
             parentContact.isUserInteractionEnabled = false
              parentAddress.isUserInteractionEnabled = false
              nameParent.isUserInteractionEnabled = false
+            parentContact.isHidden = true
+             parentAddress.isHidden = true
+             nameParent.isHidden = true
+        } else{
+            parentContact.isHidden = false
+            parentAddress.isHidden = false
+            nameParent.isHidden = false
         }
         
       

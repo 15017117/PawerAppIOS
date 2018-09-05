@@ -36,8 +36,14 @@ class WelcomeController: UIViewController{
     }
     var movieplayer:MPMoviePlayerController?
     
+    @IBOutlet weak var btnEditProfile: UIButton!
+    @IBOutlet weak var btnLogOut: UIButton!
+   
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+         btnLogOut.layer.cornerRadius = 15.0
+        btnEditProfile.layer.cornerRadius = 15.0
         
         let path  = Bundle.main.path(forResource: "pawer_app_video", ofType: "mp4")
         let url = NSURL(fileURLWithPath: path!)
@@ -46,6 +52,17 @@ class WelcomeController: UIViewController{
         self.movieplayer!.prepareToPlay()
         self.view.addSubview(self.movieplayer!.view)
     }
+    
+    @IBAction func btnEditProfile(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "EditProfileController") as! EditProfileController
+        self.show(vc, sender: self)
+        self.movieplayer!.stop()
+        
+        
+    }
+    
+    
     
 }
 
