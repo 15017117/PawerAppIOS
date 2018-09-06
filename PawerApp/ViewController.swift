@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             let convertResponse =  response.result.value as!NSDictionary
             let getStatus = convertResponse.value(forKey: "status")! as! Int
           
-            
+            if(self.emailTextField.text! != "" && self.passwordTextField.text! != ""){
           if(getStatus == 200){
             let user = convertResponse.value(forKey: "users")! as!
             NSArray
@@ -156,7 +156,12 @@ class ViewController: UIViewController {
                     
                 }
             
+            }else{
+                let alert = UIAlertController(title: "Alert!!!", message: "Please Fill Up", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
+        }
         }
     }
     
