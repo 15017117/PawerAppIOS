@@ -104,35 +104,47 @@ class RegisterController: UIViewController,UITextFieldDelegate {
                                                 defaultValues.set(user_lastname[0], forKey:"user_lastname")
                                                 defaultValues.set(user_email[0], forKey: "user_email")
                                                 
-                                                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-                                                self.show(vc, sender: self)
                                                     
+                                                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                    let twop = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+                                                    let alertController = UIAlertController(title: "Thank you for registering!", message: "Thanks for registering,an email will be sent to your parent shortly for confirmation", preferredStyle: UIAlertControllerStyle.alert)
+                                                    let ok = UIAlertAction(title: "I understand", style: UIAlertActionStyle.default, handler: {(action) -> Void in
+                                                        self.show(twop, sender: self)
+                                                    })
                                                     
-                                                    
-                                                } else{
-                                                    let user_username = user.value(forKey: "user_username") as! [String]
-                                                    
-                                                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
-                                                    
-                                                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
-                                                    let user_email = user.value(forKey: "user_email")as! [String]
-                                                    
-                                                    defaultValues.set(user_username[0], forKey: "user_username")
-                                                    
-                                                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
-                                                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
-                                                    defaultValues.set(user_email[0], forKey: "user_email")
-                                                    
-                                                    
-                                                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-                                                    self.show(vc, sender: self)
-                                                    
-
-                                                    
+                                                    alertController.addAction(ok)
+                                                    self.present(alertController, animated: true, completion: nil)
+//                                                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+//                                                self.show(vc, sender: self)
+//
                                                 }
-                                                
+                                                    
+//                                                } else{
+//                                                    let user_username = user.value(forKey: "user_username") as! [String]
+//
+//                                                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
+//
+//                                                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
+//                                                    let user_email = user.value(forKey: "user_email")as! [String]
+//
+//                                                    defaultValues.set(user_username[0], forKey: "user_username")
+//
+//                                                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
+//                                                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
+//                                                    defaultValues.set(user_email[0], forKey: "user_email")
+//
+//
+//
+//
+////                                                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+////                                                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+////                                                    self.show(vc, sender: self)
+////
+//
+//
+//                                                }
+//
                                             } else{
                                                 
                                                 let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email! Please Login via our login page ", preferredStyle: UIAlertControllerStyle.alert)
