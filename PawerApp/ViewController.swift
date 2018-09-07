@@ -145,6 +145,7 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "Alert!!!", message: "Wrong email or password!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Re-Enter Username and Password", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+         
             
           }
           
@@ -157,9 +158,16 @@ class ViewController: UIViewController {
                 }
             
             }else{
+                
+                
                 let alert = UIAlertController(title: "Alert!!!", message: "Please Fill Up", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
+                alert.view.subviews.first?.subviews.first?.backgroundColor = UIColor.red
+                
+                // Accessing buttons tintcolor :
+                alert.view.tintColor = UIColor.white
+                
             }
         }
         }

@@ -24,14 +24,27 @@ class WelcomeController: UIViewController{
         
         UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         UserDefaults.standard.synchronize()
-        self.movieplayer!.stop()
         
-        //switching to login screen
-        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-        self.navigationController?.pushViewController(loginViewController, animated: true)
-
-       
-        self.dismiss(animated: false, completion: nil)
+        var uiAlert = UIAlertController(title: "Logout", message: "Are you sure want to log out", preferredStyle: UIAlertControllerStyle.alert)
+        self.present(uiAlert, animated: true, completion: nil)
+        
+        uiAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            self.movieplayer!.stop()
+            
+            
+            //switching to login screen
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+            
+            
+            self.dismiss(animated: false, completion: nil)
+        }))
+        
+        uiAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
+        
+        }))
+        
+        
         
     }
     var movieplayer:MPMoviePlayerController?
