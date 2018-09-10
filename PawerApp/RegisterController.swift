@@ -111,10 +111,9 @@ class RegisterController: UIViewController,UITextFieldDelegate {
                                                     let ok = UIAlertAction(title: "I understand", style: UIAlertActionStyle.default, handler: {(action) -> Void in
                                                         self.show(twop, sender: self)
                                                     })
-                                            alertController.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = UIColor.red
-                                                    
+                                            
                                                     alertController.addAction(ok)
-                                                    alertController.view.tintColor = UIColor.red
+                                                    
                                                     self.present(alertController, animated: true, completion: nil)
 //                                                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //                                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController

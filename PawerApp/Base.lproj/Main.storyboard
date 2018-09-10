@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController storyboardIdentifier="LoginController" title="LoginController" id="BYZ-38-t0r" customClass="ViewController" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRI-xt-hvy" customClass="DesignableTextField" customModule="PawerApp" customModuleProvider="target">
-                                <rect key="frame" x="41" y="352" width="293" height="35"/>
+                                <rect key="frame" x="41" y="328" width="293" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="0Sj-kq-hor"/>
@@ -33,7 +33,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="waZ-qR-Kxd" customClass="DesignableTextField" customModule="PawerApp" customModuleProvider="target">
-                                <rect key="frame" x="41" y="404" width="293" height="35"/>
+                                <rect key="frame" x="41" y="380" width="293" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="JHn-hv-sgb"/>
@@ -46,19 +46,19 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-2H-0MT">
-                                <rect key="frame" x="245" y="447" width="89" height="12"/>
+                                <rect key="frame" x="245" y="423" width="89" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mantap" translatesAutoresizingMaskIntoConstraints="NO" id="0sg-qN-qPL">
-                                <rect key="frame" x="101" y="147" width="172" height="114"/>
+                                <rect key="frame" x="101" y="123" width="172" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="moJ-6v-XUZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-xS-GV2">
-                                <rect key="frame" x="221" y="285" width="64" height="33"/>
+                                <rect key="frame" x="221" y="261" width="64" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,14 +68,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gd-Cc-O9D">
-                                <rect key="frame" x="90" y="285" width="52" height="33"/>
+                                <rect key="frame" x="90" y="261" width="52" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc7-nL-nK6">
-                                <rect key="frame" x="117" y="499" width="141" height="29"/>
+                                <rect key="frame" x="117" y="475" width="141" height="29"/>
                                 <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Submit">
@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-ey-7Gj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1030"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="1088"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWS-nE-h6S">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1030"/>
@@ -326,7 +326,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep me updated, send me Newsletters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCu-3a-qgR">
-                                                <rect key="frame" x="92" y="838.33333333333337" width="192" height="12"/>
+                                                <rect key="frame" x="85" y="838.5" width="192" height="12"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -411,7 +411,7 @@
                                             <constraint firstItem="S4b-rw-fkA" firstAttribute="baseline" secondItem="FPo-G6-Cz6" secondAttribute="baseline" id="raY-ai-ys1"/>
                                             <constraint firstItem="vGO-5F-Zne" firstAttribute="trailing" secondItem="818-fb-eJ1" secondAttribute="trailing" constant="-8" id="rvK-jw-rTY"/>
                                             <constraint firstItem="Ucz-dA-Fql" firstAttribute="centerX" secondItem="818-fb-eJ1" secondAttribute="centerX" id="sAg-By-jUT"/>
-                                            <constraint firstItem="S4b-rw-fkA" firstAttribute="leading" secondItem="hCu-3a-qgR" secondAttribute="leading" constant="-8" id="sbh-ib-gqy"/>
+                                            <constraint firstItem="S4b-rw-fkA" firstAttribute="leading" secondItem="hCu-3a-qgR" secondAttribute="leading" constant="-1" id="sbh-ib-gqy"/>
                                             <constraint firstItem="bV8-ip-2sT" firstAttribute="top" secondItem="818-fb-eJ1" secondAttribute="bottom" constant="30" id="uU4-Vc-QBF"/>
                                             <constraint firstItem="flt-pi-oj6" firstAttribute="leading" secondItem="bWS-nE-h6S" secondAttribute="leading" constant="51" id="vBE-P7-14B"/>
                                             <constraint firstItem="g40-1a-D7g" firstAttribute="width" secondItem="Vo2-3q-MHI" secondAttribute="width" id="wNd-Xm-Jq2"/>
@@ -464,14 +464,14 @@
             <objects>
                 <viewController id="yzH-UC-nXD" customClass="PrivacyPolicy" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gd5-tP-l24">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeW-rS-wGM">
-                                <rect key="frame" x="16" y="74" width="344" height="674"/>
+                                <rect key="frame" x="16" y="50" width="344" height="587"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWi-JO-xJ8">
-                                        <rect key="frame" x="102" y="620" width="140" height="29"/>
+                                        <rect key="frame" x="102" y="533" width="140" height="29"/>
                                         <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="4hk-8O-ZPR"/>
@@ -485,7 +485,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRm-ok-cul">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="594"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="507"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Our Privacy Policy
   This Privacy Policy, applies to our collection and use of data collected from schools, teachers, parents and students through our educational websites/applications. The said website/applications are owned and operated by PAWER SKILLS CONSULTANCY (hereafter known as PAWER SKILLS). or one or more of its corporate affiliates (referred to collectively in this policy as "we," "us," "our" and other similar pronouns).This Policy sets out the manner in which PAWER SKILLS collects, uses, manages and protects personal data (as defined below) in compliance with the provisions of the Personal Data Protection Act 2012. 
@@ -673,18 +673,18 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
             <objects>
                 <viewController storyboardIdentifier="WelcomeController" id="i5H-3a-zJx" customClass="WelcomeController" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EVc-40-iUd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mantap" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-RR-Rjl">
-                                <rect key="frame" x="101.66666666666669" y="44" width="172" height="114"/>
+                                <rect key="frame" x="101.5" y="20" width="172" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="vaE-T4-Kdy"/>
                                     <constraint firstAttribute="height" constant="114" id="zsa-pg-EQ0"/>
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frD-bw-aOe">
-                                <rect key="frame" x="116.99999999999999" y="500" width="139.66666666666663" height="29"/>
+                                <rect key="frame" x="117" y="355" width="139.5" height="29"/>
                                 <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Edit Profile">
@@ -695,7 +695,7 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSH-C6-SKM">
-                                <rect key="frame" x="116.99999999999999" y="611" width="139.66666666666663" height="29"/>
+                                <rect key="frame" x="117" y="466" width="139.5" height="29"/>
                                 <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Log Out">
@@ -733,11 +733,11 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
             <objects>
                 <viewController storyboardIdentifier="EditProfileController" id="Hq2-e3-Tjw" customClass="EditProfileController" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vus-vh-lI0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPe-sl-BYb" customClass="DesignableTextField" customModule="PawerApp" customModuleProvider="target">
-                                <rect key="frame" x="45" y="228" width="130" height="35"/>
+                                <rect key="frame" x="45" y="204" width="130" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="L9L-G2-iWq"/>
@@ -751,13 +751,13 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mantap" translatesAutoresizingMaskIntoConstraints="NO" id="64q-HZ-Qy9">
-                                <rect key="frame" x="101" y="44" width="173" height="114"/>
+                                <rect key="frame" x="101" y="20" width="173" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="d1H-Py-5o0"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-Kd-Ijj" customClass="DesignableTextField" customModule="PawerApp" customModuleProvider="target">
-                                <rect key="frame" x="101" y="317" width="173" height="35"/>
+                                <rect key="frame" x="101" y="293" width="173" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="pv4-X1-cHj"/>
@@ -770,7 +770,7 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdF-e8-gRZ">
-                                <rect key="frame" x="117" y="458" width="142" height="29"/>
+                                <rect key="frame" x="117" y="347" width="141.5" height="29"/>
                                 <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Edit Profile">
@@ -781,7 +781,7 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-7w-O61">
-                                <rect key="frame" x="200" y="228" width="130" height="35"/>
+                                <rect key="frame" x="200" y="204" width="130" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="3TC-Ko-XvC"/>
@@ -827,14 +827,14 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
             <objects>
                 <viewController id="n7r-gx-iO9" customClass="TermofUse" customModule="PawerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JMr-xr-JRT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yr9-0E-r2E">
-                                <rect key="frame" x="16" y="74" width="344" height="674"/>
+                                <rect key="frame" x="16" y="50" width="344" height="587"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-D3-D4F">
-                                        <rect key="frame" x="102" y="620" width="140" height="29"/>
+                                        <rect key="frame" x="102" y="533" width="140" height="29"/>
                                         <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="hge-Sn-AsT"/>
@@ -848,7 +848,7 @@ If possible, when you contact us, please indicate the name of the Kids Site or o
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-8Z-jug">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="594"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="507"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Terms of Use Policy – PAWER Learning Mobile Application and website
   The PAWER LEARNING and other associated website/applications are owned and operated by PAWER SKILLS CONSULTANCY (hereafter known as PAWER SKILLS) or one or more of its corporate affiliates (referred to collectively in this Policy as "we," "us," "our" and other similar pronouns).

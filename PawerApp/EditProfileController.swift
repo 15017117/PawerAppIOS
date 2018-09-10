@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class EditProfileController : UIViewController{
+class EditProfileController : UIViewController,UITextFieldDelegate{
     let URL_USER_Profile = "http://www.ehostingcentre.com/pawer/updateprofile.php"
     
     
@@ -50,7 +50,25 @@ class EditProfileController : UIViewController{
         lastName.layer.shadowColor = UIColor.black
             .cgColor
         
+        
+        firstName.delegate = self
+        lastName.delegate = self
+        username.delegate = self
+        
+        
     }
+    
+    func textFieldShouldReturn(_ textField:UITextField)->Bool{
+        if textField == firstName{
+            lastName.becomeFirstResponder()
+        } else if textField == lastName{
+            username.becomeFirstResponder()
+        } else{
+            username.resignFirstResponder()
+        }
+        return true
+    }
+    
     
   
     
@@ -79,5 +97,7 @@ class EditProfileController : UIViewController{
         
         
     }
+    
+    
     
 }
