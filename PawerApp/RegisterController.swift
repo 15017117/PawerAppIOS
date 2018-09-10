@@ -225,6 +225,7 @@ class RegisterController: UIViewController,UITextFieldDelegate {
                                     } else{
                                         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                                         let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+                                         self.show(vc, sender: self)
                                     }
                                     
                                 } else{
