@@ -16,7 +16,8 @@ import MediaPlayer
 
 class WelcomeController: UIViewController{
     
-    
+
+    @IBOutlet weak var videoView: UIView!
     
     @IBAction func btnlogout(_ sender: UIButton) {
         
@@ -55,15 +56,22 @@ class WelcomeController: UIViewController{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-         btnLogOut.layer.cornerRadius = 15.0
+        btnLogOut.layer.cornerRadius = 15.0
         btnEditProfile.layer.cornerRadius = 15.0
         
         let path  = Bundle.main.path(forResource: "pawer_app_video", ofType: "mp4")
+
         let url = NSURL(fileURLWithPath: path!)
+
         self.movieplayer = MPMoviePlayerController(contentURL: url as URL!)
         self.movieplayer!.view.frame = CGRect(x: 0, y: 200, width:400, height: 250)
         self.movieplayer!.prepareToPlay()
+
+
         self.view.addSubview(self.movieplayer!.view)
+
+
+        
     }
     
     @IBAction func btnEditProfile(_ sender: UIButton) {

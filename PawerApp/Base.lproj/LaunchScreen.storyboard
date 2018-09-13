@@ -19,15 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mantap2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wzf-IO-fbp">
-                                <rect key="frame" x="77" y="260" width="221" height="147"/>
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0eD-2S-Dxq"/>
+                                    <constraint firstAttribute="width" constant="250" id="Xnw-dU-mmT"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wzf-IO-fbp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="GgY-gU-loL"/>
                             <constraint firstItem="Wzf-IO-fbp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qqo-jJ-1i5"/>
                             <constraint firstItem="Wzf-IO-fbp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Wk5-q8-3Sn"/>
-                            <constraint firstItem="Wzf-IO-fbp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="YJX-BW-qhy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

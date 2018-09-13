@@ -48,6 +48,57 @@ class RegisterController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    func serverCall(parameters: Parameters){
+        Alamofire.request(URL_USER_REGISTER,method: .post,parameters: parameters).responseJSON{
+            response in
+            print(response)
+            //getting the JSON value from the server
+            let defaultValues = UserDefaults.standard
+            let convertResponse  = response.result.value as!NSDictionary
+            let getStatus = convertResponse.value(forKey: "status")! as! Int
+        
+            if(getStatus == 200){
+                let user = convertResponse.value(forKey: "users")! as!NSArray
+                print(user)
+                var status_id = user.value(forKey: "status_id")as! [String]
+                print(status_id[0])
+                if(status_id[0] == "1"){
+                    let user_username = user.value(forKey: "user_username") as! [String]
+                    
+                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
+                    
+                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
+                    let user_email = user.value(forKey: "user_email")as! [String]
+                    
+                    defaultValues.set(user_username[0], forKey: "user_username")
+                    
+                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
+                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
+                    defaultValues.set(user_email[0], forKey: "user_email")
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let twop = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+                    let alertController = UIAlertController(title: "Thank you for registering!", message: "Thanks for registering,an email will be sent to your parent shortly for confirmation", preferredStyle: UIAlertControllerStyle.alert)
+                    let ok = UIAlertAction(title: "I understand", style: UIAlertActionStyle.default, handler: {(action) -> Void in
+                        self.show(twop, sender: self)
+                    })
+                    
+                    alertController.addAction(ok)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                }
+                
+            } else{
+                
+                let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email! Please Login via our login page ", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        }
+    }
     
     @IBAction func buttonRegister(_ sender: UIButton) {
         
@@ -61,23 +112,21 @@ class RegisterController: UIViewController,UITextFieldDelegate {
             "parent_name":nameParent.text!,
             "parent_contact": parentContact.text!,
             "parent_address":parentAddress.text!,
-            
             ]
         
+        //Server Call
         
-        Alamofire.request(URL_USER_REGISTER,method: .post,parameters: parameters).responseJSON{
-            response in
-            print(response)
-            //getting the JSON value from the server
-            let defaultValues = UserDefaults.standard
-            let convertResponse  = response.result.value as!NSDictionary
-            let getStatus = convertResponse.value(forKey: "status")! as! Int
-            
+        
+
 
             if self.unchecked == true{
                 if (self.firstName.text! != "" && self.lastName.text! != "" && self.email.text! != "" && self.userName.text! != "" && self.DateofBirth.text! != "" && self.password.text! != "" && self.confirmpassword.text! != ""){
                     
+                    print("AGE  :: \(self.calcAge(birthday: self.DateofBirth.text!))")
+                    
                     if(self.calcAge(birthday: self.DateofBirth.text!) <= 13){
+                        
+                        print("AGE  :: \(self.calcAge(birthday: self.DateofBirth.text!))")
                         if(self.parentAddress.text! != "" && self.parentContact.text! != "" && self.nameParent.text! != ""){
                             if(self.isValidEmail(testStr: self.parentAddress.text!)){
                                 if(self.isValidName(self.nameParent.text!)){
@@ -85,74 +134,7 @@ class RegisterController: UIViewController,UITextFieldDelegate {
                                 if(self.isValidEmail(testStr: self.email.text!)){
                                     if(self.isValidName(self.firstName.text!) && self.isValidName(self.lastName.text!)){
                                         if (self.password.text == self.confirmpassword.text){
-                                            if(getStatus == 200){
-                                                let user = convertResponse.value(forKey: "users")! as!NSArray
-                                         print(user)
-                                                var status_id = user.value(forKey: "status_id")as! [String]
-                                                print(status_id[0])
-                                                if(status_id[0] == "1"){
-                                                let user_username = user.value(forKey: "user_username") as! [String]
-                                                
-                                                let user_firstname = user.value(forKey: "user_firstname")as! [String]
-                                                
-                                                let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
-                                                let user_email = user.value(forKey: "user_email")as! [String]
-                                                
-                                                defaultValues.set(user_username[0], forKey: "user_username")
-                                                
-                                                defaultValues.set(user_firstname[0], forKey: "user_firstname")
-                                                defaultValues.set(user_lastname[0], forKey:"user_lastname")
-                                                defaultValues.set(user_email[0], forKey: "user_email")
-                                                
-                                                    
-                                                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                                    let twop = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-                                                    let alertController = UIAlertController(title: "Thank you for registering!", message: "Thanks for registering,an email will be sent to your parent shortly for confirmation", preferredStyle: UIAlertControllerStyle.alert)
-                                                    let ok = UIAlertAction(title: "I understand", style: UIAlertActionStyle.default, handler: {(action) -> Void in
-                                                        self.show(twop, sender: self)
-                                                    })
-                                            
-                                                    alertController.addAction(ok)
-                                                    
-                                                    self.present(alertController, animated: true, completion: nil)
-//                                                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-//                                                self.show(vc, sender: self)
-//
-                                                }
-                                                    
-//                                                } else{
-//                                                    let user_username = user.value(forKey: "user_username") as! [String]
-//
-//                                                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
-//
-//                                                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
-//                                                    let user_email = user.value(forKey: "user_email")as! [String]
-//
-//                                                    defaultValues.set(user_username[0], forKey: "user_username")
-//
-//                                                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
-//                                                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
-//                                                    defaultValues.set(user_email[0], forKey: "user_email")
-//
-//
-//
-//
-////                                                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-////                                                    let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-////                                                    self.show(vc, sender: self)
-////
-//
-//
-//                                                }
-//
-                                            } else{
-                                                
-                                                let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email! Please Login via our login page ", preferredStyle: UIAlertControllerStyle.alert)
-                                                alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
-                                                self.present(alert, animated: true, completion: nil)
-                                                
-                                            }
+                                            serverCall(parameters: parameters)
                                         } else{
                                             
                                             let alert = UIAlertController(title: "Alert!!!", message: "Password & Confirm Password Doesn't Match", preferredStyle: UIAlertControllerStyle.alert)
@@ -197,44 +179,45 @@ class RegisterController: UIViewController,UITextFieldDelegate {
                         
                         if(self.isValidEmail(testStr: self.email.text!)){
                             if(self.password.text == self.confirmpassword.text){
-                                if(getStatus == 200){
                                 
-                                    let user = convertResponse.value(forKey: "users")! as!NSArray
-                                    print(user)
-                                    let status_id = user.value(forKey: "status_id")as! [String]
-                                    print(status_id)
-                                    
-                                    if(status_id[0] == "2"){
-                                    
-                                    let user_username = user.value(forKey: "user_username") as! [String]
-                                    
-                                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
-                                    
-                                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
-                                    let user_email = user.value(forKey: "user_email")as! [String]
-                                    
-                                    defaultValues.set(user_username[0], forKey: "user_username")
-                                    
-                                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
-                                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
-                                    defaultValues.set(user_email[0], forKey: "user_email")
-                                    
-                                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                    let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
-                                    self.show(vc, sender: self)
-                                    } else{
-                                        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                                        let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
-                                         self.show(vc, sender: self)
-                                    }
-                                    
-                                } else{
-                                    
-                                    let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email! ", preferredStyle: UIAlertControllerStyle.alert)
-                                    alert.addAction(UIAlertAction(title: "Re-Enter", style: UIAlertActionStyle.default, handler: nil))
-                                    self.present(alert, animated: true, completion: nil)
-                                    
-                                }
+//                                if(getStatus == 200){
+//
+//                                    let user = convertResponse.value(forKey: "users")! as!NSArray
+//                                    print(user)
+//                                    let status_id = user.value(forKey: "status_id")as! [String]
+//                                    print(status_id)
+//
+//                                    if(status_id[0] == "2"){
+//
+//                                    let user_username = user.value(forKey: "user_username") as! [String]
+//
+//                                    let user_firstname = user.value(forKey: "user_firstname")as! [String]
+//
+//                                    let user_lastname = user.value(forKeyPath: "user_lastname")as! [String]
+//                                    let user_email = user.value(forKey: "user_email")as! [String]
+//
+//                                    defaultValues.set(user_username[0], forKey: "user_username")
+//
+//                                    defaultValues.set(user_firstname[0], forKey: "user_firstname")
+//                                    defaultValues.set(user_lastname[0], forKey:"user_lastname")
+//                                    defaultValues.set(user_email[0], forKey: "user_email")
+//
+//                                    let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                                    let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeController") as! WelcomeController
+//                                    self.show(vc, sender: self)
+//                                    } else{
+//                                        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                                        let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as! ViewController
+//                                         self.show(vc, sender: self)
+//                                    }
+//
+//                                } else{
+//
+//                                    let alert = UIAlertController(title: "Almost There!", message: "You have already registered for PAWER under this email! ", preferredStyle: UIAlertControllerStyle.alert)
+//                                    alert.addAction(UIAlertAction(title: "Re-Enter", style: UIAlertActionStyle.default, handler: nil))
+//                                    self.present(alert, animated: true, completion: nil)
+//
+//                                }
                             } else{
                                 let alert = UIAlertController(title: "Alert!!!", message: "Password & Confirm Password Doesn't Match", preferredStyle: UIAlertControllerStyle.alert)
                                 alert.addAction(UIAlertAction(title: "Re-enter Password", style: UIAlertActionStyle.default, handler: nil))
@@ -266,7 +249,7 @@ class RegisterController: UIViewController,UITextFieldDelegate {
             
             
             
-        }
+        
         
     }
     
@@ -379,22 +362,29 @@ class RegisterController: UIViewController,UITextFieldDelegate {
         
         let intyear = Int(year)
         
-        if(intyear! <= 2000){
-            parentContact.isUserInteractionEnabled = false
-            parentAddress.isUserInteractionEnabled = false
-            nameParent.isUserInteractionEnabled = false
-            parentContact.isHidden = true
-            parentAddress.isHidden = true
-            nameParent.isHidden = true
-        } else{
+        if(self.calcAge(birthday: self.DateofBirth.text!) <= 13){
             parentContact.isUserInteractionEnabled = true
             parentAddress.isUserInteractionEnabled = true
             nameParent.isUserInteractionEnabled = true
             parentContact.isHidden = false
             parentAddress.isHidden = false
             nameParent.isHidden = false
+        }else{
+            parentContact.isUserInteractionEnabled = false
+            parentAddress.isUserInteractionEnabled = false
+            nameParent.isUserInteractionEnabled = false
+            parentContact.isHidden = true
+            parentAddress.isHidden = true
+            nameParent.isHidden = true
         }
         
+        
+//        if(intyear! <= 2000){
+//
+//        } else{   
+//
+//        }
+//
         
         
         

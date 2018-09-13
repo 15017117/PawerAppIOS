@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		015AFE31F5919A44B891FB24 /* Pods_PawerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C915FD2EDD8E45FE6B5C6A3 /* Pods_PawerAppTests.framework */; };
 		3FC0ED1C18156B98BFFF85DF /* Pods_PawerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DFA0773D2EB0EB66F850F /* Pods_PawerAppUITests.framework */; };
+		487E7EA92148A5F80007DCB1 /* pawer_app_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 487E7EA82148A5F80007DCB1 /* pawer_app_video.mp4 */; };
 		840DCDFE20FF41ED00AE405F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DCDFD20FF41ED00AE405F /* RegisterController.swift */; };
 		843E4ACC21252D5400F2BAC4 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E4ACB21252D5400F2BAC4 /* Category.storyboard */; };
 		843E4AD22125308300F2BAC4 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4AD02125308300F2BAC4 /* ItemCell.swift */; };
@@ -16,7 +17,6 @@
 		843E4AD52125329E00F2BAC4 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4AD42125329E00F2BAC4 /* CategoryController.swift */; };
 		843E4AD72125526300F2BAC4 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E4AD62125526300F2BAC4 /* EditProfileController.swift */; };
 		846110E32123F9BF00A65BD5 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846110E22123F9BF00A65BD5 /* WelcomeController.swift */; };
-		846110E521240E8500A65BD5 /* pawer_app_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 846110E42124050F00A65BD5 /* pawer_app_video.mp4 */; };
 		8491CD16213E362500F62F45 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491CD15213E362500F62F45 /* PrivacyPolicy.swift */; };
 		8491CD18213E395A00F62F45 /* TermsofUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491CD17213E395A00F62F45 /* TermsofUse.swift */; };
 		84EB1EFE20FD82650026BDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB1EFD20FD82650026BDCB /* AppDelegate.swift */; };
@@ -52,6 +52,7 @@
 		2938930C7213A5FA831859B6 /* Pods-PawerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3933ADE3561C579506AF6037 /* Pods-PawerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43794DC877CF934E265F3E2C /* Pods-PawerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		487E7EA82148A5F80007DCB1 /* pawer_app_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pawer_app_video.mp4; sourceTree = "<group>"; };
 		7ACFC841A0AF676AB1A74129 /* Pods-PawerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawerAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		840DCDFD20FF41ED00AE405F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		843E4ACB21252D5400F2BAC4 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		843E4AD42125329E00F2BAC4 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		843E4AD62125526300F2BAC4 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		846110E22123F9BF00A65BD5 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
-		846110E42124050F00A65BD5 /* pawer_app_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = pawer_app_video.mp4; path = ../../../Downloads/pawer_app_video.mp4; sourceTree = "<group>"; };
 		8491CD15213E362500F62F45 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicy.swift; sourceTree = "<group>"; };
 		8491CD17213E395A00F62F45 /* TermsofUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsofUse.swift; sourceTree = "<group>"; };
 		84EB1EFA20FD82650026BDCB /* PawerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,8 +176,8 @@
 				84EB1F0120FD82650026BDCB /* Main.storyboard */,
 				84EB1F0420FD82670026BDCB /* Assets.xcassets */,
 				84EB1F0620FD82670026BDCB /* LaunchScreen.storyboard */,
+				487E7EA82148A5F80007DCB1 /* pawer_app_video.mp4 */,
 				84EB1F0920FD82670026BDCB /* Info.plist */,
-				846110E42124050F00A65BD5 /* pawer_app_video.mp4 */,
 			);
 			path = PawerApp;
 			sourceTree = "<group>";
@@ -213,6 +213,7 @@
 				84EB1EF720FD82650026BDCB /* Frameworks */,
 				84EB1EF820FD82650026BDCB /* Resources */,
 				0D378474D803C29D788CDFAC /* [CP] Embed Pods Frameworks */,
+				E9E656B7542067B3A70351DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +232,8 @@
 				84EB1F0A20FD82670026BDCB /* Sources */,
 				84EB1F0B20FD82670026BDCB /* Frameworks */,
 				84EB1F0C20FD82670026BDCB /* Resources */,
+				6D0A14708E929F0EB1150EF7 /* [CP] Embed Pods Frameworks */,
+				DA3E22984DCB7B984392C900 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +253,8 @@
 				84EB1F1520FD82670026BDCB /* Sources */,
 				84EB1F1620FD82670026BDCB /* Frameworks */,
 				84EB1F1720FD82670026BDCB /* Resources */,
+				0CA766007080DDD57B5DC92F /* [CP] Embed Pods Frameworks */,
+				A80AD3C06FD46275EE0FE7D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,11 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				843E4ACC21252D5400F2BAC4 /* Category.storyboard in Resources */,
-				846110E521240E8500A65BD5 /* pawer_app_video.mp4 in Resources */,
 				843E4AD32125308300F2BAC4 /* ItemCell.xib in Resources */,
 				84EB1F0820FD82670026BDCB /* LaunchScreen.storyboard in Resources */,
 				84EB1F0520FD82670026BDCB /* Assets.xcassets in Resources */,
 				84EB1F0320FD82650026BDCB /* Main.storyboard in Resources */,
+				487E7EA92148A5F80007DCB1 /* pawer_app_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +340,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CA766007080DDD57B5DC92F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0D378474D803C29D788CDFAC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +395,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D0A14708E929F0EB1150EF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		814EE40E8DB0429736BBB9CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +428,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A80AD3C06FD46275EE0FE7D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerAppUITests/Pods-PawerAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B055192322EB6C3F5D6FAE3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +459,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3E22984DCB7B984392C900 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerAppTests/Pods-PawerAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E656B7542067B3A70351DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawerApp/Pods-PawerApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -600,17 +680,21 @@
 			baseConfigurationReference = 43794DC877CF934E265F3E2C /* Pods-PawerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2X8GU4BVVX;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P3S55HQ7DC;
 				INFOPLIST_FILE = PawerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Etechnology.PawerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Etechnology.PawerLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "47aef117-ae86-4dc2-8743-eb0ee461fcb9";
+				PROVISIONING_PROFILE_SPECIFIER = Pawer_learning_phase1;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -619,17 +703,21 @@
 			baseConfigurationReference = B0FF903D07CB2949F0104B67 /* Pods-PawerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2X8GU4BVVX;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P3S55HQ7DC;
 				INFOPLIST_FILE = PawerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Etechnology.PawerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Etechnology.PawerLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "47aef117-ae86-4dc2-8743-eb0ee461fcb9";
+				PROVISIONING_PROFILE_SPECIFIER = Pawer_learning_phase1;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
